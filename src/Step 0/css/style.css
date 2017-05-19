@@ -1,0 +1,207 @@
+/*
+  Design for Developers
+  A workshop by Zaharenia Atzitzikaki
+  DEVit Conference, May 2017
+
+  Step 0
+*/
+
+/*****************
+ * reset
+ *****************/
+@import "reset.css";
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+  *zoom: 1;
+}
+
+/*****************
+ * general rules
+ *****************/
+body {
+  font: 14px "Helvetica Neue", Helvetica, Arial, san-serif;
+  line-height: 1.4;
+  color: #000;
+  background-color: #fff;
+}
+
+.mainContainer {
+  width: 1180px;
+  margin: 30px auto;
+}
+
+a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 40px;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.centered {
+  text-align: center;
+}
+
+.callToAction {
+  display: inline-block;
+  background: #d8d8d8;
+  border: 1px solid #9e9e9e;
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/*****************
+ * masthead
+ *****************/
+.masthead .content {
+  width: 510px;
+}
+
+.masthead .content h1 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.masthead .content  h1 span {
+  font-weight: normal;
+}
+
+/*****************
+ * vipFeatures
+ *****************/
+.vipFeatures {
+  margin-top: 50px;
+}
+.vipFeature {
+  margin-bottom: 50px;
+}
+
+.vipFeature .content {
+  width: 600px;
+}
+
+/*****************
+* features
+*****************/
+.feature {
+  width: 480px;
+  margin-bottom: 30px;
+}
+
+/*****************
+* price
+*****************/
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plan {
+  width: 28%;
+  margin: 10px;
+  float: left;
+  border: 1px solid #999;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.readmore {
+  display: block;
+}
+
+.plan ul {
+  padding-left: 20px;
+  text-indent: 2px;
+  list-style: none;
+  list-style-position: outside;
+  flex-grow: 1;
+}
+
+.plan li:before {
+  content: '✔';
+  margin-left: -1em;
+  margin-right: .100em;
+}
+
+/*****************
+* sign up
+*****************/
+.signup {
+  width: 240px;
+  margin: 40px auto 0;
+}
+
+.signup label {
+  display: block;
+  font-weight: bold;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.signup input {
+  width: 100%;
+  padding: 5px;
+}
+
+/*****************
+* footer
+*****************/
+.footer {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}

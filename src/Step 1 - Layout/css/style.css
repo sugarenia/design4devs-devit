@@ -1,0 +1,186 @@
+/*
+  Design for Developers
+  A workshop by Zaharenia Atzitzikaki
+  DEVit Conference, May 2017
+
+  Step 1
+*/
+
+/*****************
+ * reset
+ *****************/
+@import "bootstrap.css";
+@import "reset.css";
+
+/*****************
+ * general rules
+ *****************/
+body {
+	font: 14px "Helvetica Neue", Helvetica, Arial, san-serif;
+	line-height: 1.4;
+	color: #000;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #0a0a0a;
+}
+
+h2 {
+	margin-bottom: 24px;
+}
+
+h3 {
+	margin-bottom: 48px;
+}
+
+h4 {
+	margin-bottom: 24px;
+}
+
+figure {
+	line-height: 0;
+}
+
+.centered {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.callToAction {
+	display: inline-block;
+	background: #d8d8d8;
+	border: 1px solid #9e9e9e;
+	padding: 10px 20px;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.section {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.masthead, .features, .signup {
+	background: #eee;
+}
+
+/*****************
+ * masthead
+ *****************/
+.masthead .content h1 {
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+
+.masthead .content  h1 span {
+	font-weight: normal;
+}
+
+/*****************
+ * vipFeatures
+ *****************/
+.vipFeature:first-child {
+	margin-bottom: 80px;
+}
+.vipFeatures h3 {
+	margin-bottom: 24px;
+}
+
+/*****************
+* features
+*****************/
+.features .row:nth-child(2) .feature {
+	margin-bottom: 48px;
+}
+@media screen and (max-width: 480px) {
+	.features .feature {
+		margin-bottom: 48px;
+	}
+}
+
+/*****************
+* price
+*****************/
+.row-eq-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.plan {
+	border: 1px solid #999;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.price {
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.readmore {
+	display: block;
+	margin-top: 24px;
+}
+
+.plan ul {
+	padding-left: 20px;
+	text-indent: 2px;
+	list-style: none;
+	list-style-position: outside;
+	flex-grow: 1;
+	text-align: left;
+}
+
+.plan li:before {
+	content: '✔';
+	margin-left: -1em;
+	margin-right: .100em;
+}
+
+/*****************
+* sign up
+*****************/
+.signup label {
+	display: block;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 8px;
+}
+
+.signup input {
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 32px;
+}
+
+.signup .row .row:last-child input {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+	.signup .row .row:last-child input {
+		margin-bottom: 32px;
+	}
+}
+
+.signup .callToAction {
+	width: 100%;
+	margin-top: 20px;
+}
+
+/*****************
+* footer
+*****************/
+.footer {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
