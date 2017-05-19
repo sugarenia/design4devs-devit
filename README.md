@@ -8,7 +8,7 @@ If you need a more in-depth version of this workshop for your organization, send
 
 Thanks for attending, you rock.
 
-Zaharenia Atzitzikaki
-http://sugarenia.com - @sugarenia
-Design for Developers Workshop @ DEVit
+Zaharenia Atzitzikaki<br>
+http://sugarenia.com - http://twitter.com/sugarenia<br>
+Design for Developers Workshop @ DEVit<br>
 May 21st, 2017
